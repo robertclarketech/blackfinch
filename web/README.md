@@ -1,4 +1,4 @@
-# Blackfinch Technical Test Backend
+# Blackfinch Technical Test Frontend
 
 ## Setup
 

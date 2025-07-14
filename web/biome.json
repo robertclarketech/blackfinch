@@ -1,0 +1,24 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+	"organizeImports": {
+		"enabled": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"all": true,
+			"correctness": {
+				"noUndeclaredDependencies": "off"
+			},
+			"complexity": {
+				"useLiteralKeys": "off"
+			},
+			"style": {
+				"useExplicitLengthCheck": "off",
+				"useNamingConvention": "off",
+				"useDefaultSwitchClause": "off"
+			}
+		},
+		"ignore": ["src/routeTree.gen.ts", "src/data/client/"]
+	}
+}

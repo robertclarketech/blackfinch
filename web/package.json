@@ -1,0 +1,35 @@
+{
+	"name": "blackfinch-web",
+	"version": "0.0.1",
+	"main": "index.ts",
+	"scripts": {
+		"preview": "vite preview",
+		"openapi-gen": "openapi-generator-cli generate -g typescript-fetch -o ./src/data/client -i http://localhost:5190/swagger/v1/swagger.json --additional-properties=supportsES6=true",
+		"typecheck": "tsc",
+		"lint": "biome lint ./src --error-on-warnings",
+		"dev": "vite",
+		"build": "concurrently \"npm run typecheck\" \"npm run lint\" \"vite build\" --kill-others-on-fail -g"
+	},
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@tanstack/router-plugin": "^1.127.5",
+		"@types/react": "^19.1.8",
+		"@types/react-dom": "^19.1.6",
+		"@vitejs/plugin-react": "^4.6.0",
+		"concurrently": "^9.2.0",
+		"typescript": "^5.8.3",
+		"vite": "^7.0.4",
+		"vite-tsconfig-paths": "^5.1.4"
+	},
+	"dependencies": {
+		"@carbon/react": "^1.85.1",
+		"@tanstack/react-router": "^1.127.3",
+		"@tanstack/react-router-devtools": "^1.127.3",
+		"react": "^19.1.0",
+		"react-dom": "^19.1.0",
+		"valibot": "^1.1.0"
+	}
+}

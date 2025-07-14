@@ -1,0 +1,39 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"allowUnusedLabels": false,
+		"allowUnreachableCode": false,
+		"exactOptionalPropertyTypes": false,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"noUncheckedIndexedAccess": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+
+		"isolatedModules": true,
+
+		"checkJs": true,
+
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+
+		"target": "ESNext",
+		"module": "ESNext",
+		"moduleResolution": "bundler",
+		"allowSyntheticDefaultImports": true,
+		"jsx": "preserve",
+		"jsxImportSource": "react",
+		"types": ["vite/client"],
+		"noEmit": true,
+		"allowImportingTsExtensions": true,
+
+		"paths": {
+			"@data/*": ["./src/data/*"],
+			"@src/*": ["./src/*"]
+		}
+	},
+	"include": ["src/**/*"]
+	// "exclude": ["src/data/client/**/*"]
+}

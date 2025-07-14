@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Sdk Name="Aspire.AppHost.Sdk" Version="9.0.0"/>
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <IsAspireHost>true</IsAspireHost>
+        <UserSecretsId>1eb24ec9-bf97-44db-926a-eb0f64339d71</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Aspire.Hosting.AppHost" Version="9.3.1"/>
+        <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="9.3.1"/>
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Blackfinch.Api\Blackfinch.Api.csproj"/>
+    </ItemGroup>
+
+</Project>

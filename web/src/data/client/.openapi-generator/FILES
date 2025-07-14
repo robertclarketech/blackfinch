@@ -1,0 +1,8 @@
+.openapi-generator-ignore
+apis/BlackfinchApiApi.ts
+apis/index.ts
+index.ts
+models/CreateLoanApplicationRequest.ts
+models/LoanTotalApplicantsGet200Response.ts
+models/index.ts
+runtime.ts
